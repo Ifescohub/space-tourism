@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+  
+  <!-- CSS Style  -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- Javascripts -->
+  <script src="./Scripts/nav.js" defer></script>
+  <script src="./Scripts/tabs.js" defer></script>
+</head>
+<body id="destination">
+<a class="skip-to-content" href="#main">Skip to content</a>
+<header>
+  <div class="logo">
+    <img src="./assets/shared/logo.svg" alt="Space Logo">
+  </div>
+
+  <button class="mobile-nav-toggle" aria-controls="navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+
+  <nav class="space">
+    <ul class=" underline navigation">
+        <li><a href="index.html" class="uppercase fs-1 ls-3"><span aria-hidden="true">00</span>Home</a></li>
+        <li class="active"><a href="destination.html" class="uppercase fs-1 ls-3"><span aria-hidden="true">01</span>Destination</a></li>
+        <li><a href="crew.html" class="uppercase fs-1 ls-3"><span aria-hidden="true">02</span>Crew</a></li>
+        <li><a href="technology.html" class="uppercase fs-1 ls-3"><span aria-hidden="true">03</span>Technology</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main" class="grid-container container-destination">
+  <h2 class="number-heading"><span aria-hidden="true">01</span>Pick your destination</h2>
+
+  <!-- IMAGES -->
+  <div>
+    <!-- Moon Image  -->
+    <div role="tab-image" id="moon-image">
+      <img src="assets/destination/image-moon.png" alt="the moon">
+    </div>
+
+    <!-- Mars Image  -->
+    <div role="tab-image" id="mars-image" hidden>
+      <img src="assets/destination/image-mars.png" alt="the mars">
+    </div>
+
+    <!-- Europa Image  -->
+    <div role="tab-image" id="europa-image" hidden>
+      <img src="assets/destination/image-europa.png" alt="the europa">
+    </div>
+
+    <!-- Titan Image  -->
+    <div role="tab-image" id="titan-image" hidden>
+      <img src="assets/destination/image-titan.png" alt="the titan">
+    </div>
+  </div>
+  
+  
+  <section class="space" style="--margin-bottom: 1rem">
+    <!-- TABS -->
+    <div class="tab-list underline space" role="tablist" aria-label="Destination list">
+      <button aria-selected="true" role="tabs" tabindex="0" aria-controls="moon-tab" data-image="moon-image" class="text-light ff-sans uppercase fs-2 ls-3">Moon</button>
+      <button aria-selected="false" role="tabs" tabindex="-1" aria-controls="mars-tab" data-image="mars-image" class="text-light ff-sans uppercase fs-2 ls-3">Mars</button>
+      <button aria-selected="false" role="tabs" tabindex="-1" aria-controls="europa-tab" data-image="europa-image" class="text-light ff-sans uppercase fs-2 ls-3">Europa</button> 
+      <button aria-selected="false" role="tabs" tabindex="-1" aria-controls="titan-tab" data-image="titan-image" class="text-light ff-sans uppercase fs-2 ls-3">Titan</button> 
+    </div>
+
+    <!-- Moon  Article-->
+    <article id="moon-tab" tab-index="0" role="tab-article">
+      <h1 class="uppercase text-white ff-serif fs-7 ls-3"> Moon</h1>
+      <p class="text-light">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+        regain perspective and come back refreshed. While you’re there, take in some history 
+        by visiting the Luna 2 and Apollo 11 landing sites.
+      </p>
+    
+      <hr>
+
+      <div class="flex stat">
+        <div>
+          <h5 class="ff-sans fs-1 uppercase ls-3 text-light">Avg. Distance</h5>
+          <h5 class="ff-serif fs-3 uppercase">384,400 km</h5>
+        </div>
+        <div>
+          <h5 class="ff-sans fs-1 uppercase ls-3 text-light">Est. Travel Time</h5>
+          <h5 class="ff-serif fs-3 uppercase">3 days</h5>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- Mars Article -->
+    <article hidden id="mars-tab" tab-index="0" role="tab-article">
+      <h1 class="uppercase text-white ff-serif fs-7 ls-3"> Mars</h1>
+      <p class="text-light">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+        the tallest planetary mountain in our solar system. It’s two and a half times 
+        the size of Everest!
+      </p>
+    
+      <hr>
+
+      <div class="flex stat">
+        <div>
+          <h5 class="ff-sans fs-1 uppercase ls-3 text-light">Avg. Distance</h5>
+          <h5 class="ff-serif fs-3 uppercase">225 mil. km</h5>
+        </div>
+        <div>
+          <h5 class="ff-sans fs-1 uppercase ls-3 text-light">Est. Travel Time</h5>
+          <h5 class="ff-serif fs-3 uppercase">9 months</h5>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- Europa  Article-->
+    <article hidden id="europa-tab" tab-index="0" role="tab-article">
+      <h1 class="uppercase text-white ff-serif fs-7 ls-3">Europa</h1>
+      <p class="text-light">The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+        winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+        ice skating, curling, hockey, or simple relaxation in your snug 
+        wintery cabin.
+      </p>
+    
+      <hr>
+
+      <div class="flex stat">
+        <div>
+          <h5 class="ff-sans fs-1 uppercase ls-3 text-light">Avg. Distance</h5>
+          <h5 class="ff-serif fs-3 uppercase">628 mil. km</h5>
+        </div>
+        <div>
+          <h5 class="ff-sans fs-1 uppercase ls-3 text-light">Est. Travel Time</h5>
+          <h5 class="ff-serif fs-3 uppercase">3 years</h5>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- Titan  Article-->
+    <article hidden id="titan-tab" tab-index="0" role="tab-article">
+      <h1 class="uppercase text-white ff-serif fs-7 ls-3">Titan</h1>
+      <p class="text-light">The only moon known to have a dense atmosphere other than Earth, Titan 
+        is a home away from home (just a few hundred degrees colder!). As a 
+        bonus, you get striking views of the Rings of Saturn.
+      </p>
+    
+      <hr>
+
+      <div class="flex stat">
+        <div>
+          <h5 class="ff-sans fs-1 uppercase ls-3 text-light">Avg. Distance</h5>
+          <h5 class="ff-serif fs-3 uppercase">1.6 bil. km</h5>
+        </div>
+        <div>
+          <h5 class="ff-sans fs-1 uppercase ls-3 text-light">Est. Travel Time</h5>
+          <h5 class="ff-serif fs-3 uppercase">7 years</h5>
+        </div>
+      </div>
+    </article>
+  </section>
+
+</main>
+</body>
+</html>

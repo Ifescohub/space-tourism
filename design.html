@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Design</title>
+
+    <!-- CSS Style  -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="container">
+    <header>
+        <div class="flex" style="justify-content: space-between;">
+            <img src="assets/shared/logo.svg" alt="">
+            <p class="uppercase text-light ff-sans fs-3 ls-2">Design System</p>
+        </div>
+    </header>
+
+    <div>
+        <h2 class="number-heading"><span>01</span>colors</h2>
+        <div class="flex">
+            <div style="flex-grow: 1;">
+                <div class="rectangle">#0B0D17</div>
+                <p><span>RGB</span> 11, 13, 23</p>
+                <p><span>HSL</span> 230 , 35%, 7%</p>
+            </div>
+
+            <div style="flex-grow: 1;">
+                <div class="rectangle bg-light text-dark">#D0D6F9</div>
+                <p><span>RGB</span> 11, 13, 23</p>
+                <p><span>HSL</span> 230 , 35%, 7%</p>
+            </div>
+
+            <div style="flex-grow: 1;">
+                <div class="rectangle bg-white text-dark">#0B0D17</div>
+                <p><span>RGB</span>  11, 13, 23</p>
+                <p><span>HSL</span>  230 , 35%, 7%</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2 class="number-heading"><span>02</span>Typography</h2>
+        
+        <div class="flex">
+            <section class="space" style="flex-basis: 100%;">
+                <div>
+                    <p class="text-light">Heading 1 - Bellefair Regular - 150px </p>
+                    <h1 class="ff-serif fs-7 uppercase">Earth</h1>
+                </div>
+        
+                <div>
+                    <p class="text-light">Heading 2 - Bellefair Regular - 100px </p>
+                    <h2 class="ff-serif fs-6 uppercase">Venus</h2>
+                </div>
+        
+                <div>
+                    <p class="text-light">Heading 3 - Bellefair Regular - 56px </p>
+                    <h3 class="ff-serif fs-5 uppercase">Jupiter & Saturn</h3>
+                </div>
+        
+                <div>
+                    <p class="text-light">Heading 4 - Bellefair Regular - 32px </p>
+                    <h4 class="ff-serif fs-4 uppercase">Uranus, Nepturn, & Pluto</h4>
+                </div>
+        
+                <div>
+                    <p class="text-light">Heading 5 - Barlow Condensed Regular - 28px - 4.75 Character Space</p>
+                    <h5 class="ff-sans fs-3 uppercase text-light ls-1">So, You want to travel to space</h5>
+                </div>
+            </section>
+    
+            <section class="space" style="flex-basis: 100%;">
+                <div>
+                    <p class="text-light">Subheading 1 - Bellefair Regular - 28px</p>
+                    <h5 class="ff-serif fs-3 uppercase">384,400 km</h5>
+                </div>
+    
+                <div>
+                    <p class="text-light">Subheading 2 - Barlow Condensed Regular - 14px - 2.35 Character Space</p>
+                    <h5 class="ff-sans fs-1 uppercase ls-3">Avg. Distance</h5>
+                </div>
+    
+                <div>
+                    <p class="text-light">Nav Text - Barlow Condensed Regular - 16px - 2.7 Character Space</p>
+                    <h5 class="ff-sans fs-2 uppercase ls-2">Europa</h5>
+                </div>
+    
+                <div>
+                    <p class="text-light">Body Text</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. 
+                        Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. 
+                        Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, 
+                        eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.Lorem ipsum dolor sit 
+                        amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. 
+                        In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet 
+                        viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. 
+                        Suspendisse potenti.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. 
+                        Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. </p>
+                </div>
+            </section>
+        </div>
+        
+    </div>
+
+    <div>
+        <h2 class="number-heading"><span>03</span>Interactive Elements</h2>
+        <div>
+            <!-- Main Navigation Bars  -->
+            <nav class="space">
+                <ul class=" underline navigation">
+                    <li class="active"><a href="#" class="uppercase fs-1 ls-3"><span>00</span> Active</a></li>
+                    <li class="hover"><a href="#" class="uppercase fs-1 ls-3"><span>01</span> Hovered</a></li>
+                    <li><a href="#" class="uppercase fs-1 ls-3"><span>02</span> Idle</a></li>
+                </ul>
+                <p class="text-light" style="text-align: center;">Different States of Navigation Bar</p>
+            </nav>
+
+            <div class="buttons">
+                <!-- Big Button  -->
+                <div>
+                    <a class="big-button" href="#">EXPLORE</a>
+                </div>
+
+        
+                <div class="space">
+                     <!-- Tabs -->
+                    <div class="flex underline">
+                        <button aria-selected="true" class="bg-dark text-light ff-sans uppercase fs-1 ls-3">Moon<span/a></button>
+                        <button aria-selected="false" class="hover bg-dark text-light ff-sans uppercase fs-1 ls-3">Mars<span/a></button>
+                        <button aria-selected="false" class="bg-dark text-light ff-sans uppercase fs-1 ls-3">Europa<span/a></button> 
+                    </div>
+    
+                    <!--Dot Slide -->
+                    <div class="dot-slide flex">
+                        <div aria-selected="true"><span class="sr-only">Slide</span></div>
+                        <div aria-selected="false"><span class="sr-only">Slide</span></div>
+                        <div aria-selected="false"><span class="sr-only">Slide</span></div>
+                    </div>
+
+                    <!-- Numbers Slide-->
+                    <div class="number-slide flex" style="--column: column">
+                        <button aria-selected="true">1</button>
+                        <button aria-selected="false">2</button>
+                        <button aria-selected="false">3</button>
+                    </div>
+                </div>
+            </div>  
+            
+        </div>
+        
+    </div>
+</main>
+</body>
+</html>
