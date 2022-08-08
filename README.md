@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ifescohub/space-tourism/)
-- Live Site URL: [Add live site URL here](https://ifescohub.github.io/space-tourism/)
+- Solution URL: [https://github.com/ifescohub/space-tourism/](https://github.com/ifescohub/space-tourism/)
+- Live Site URL: [https://ifescohub.github.io/space-tourism/](https://ifescohub.github.io/space-tourism/)
 
 ## My process
 
