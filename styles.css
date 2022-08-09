@@ -326,7 +326,7 @@ nav{
     }
 
     .mobile-nav-toggle{
-        display: unset;
+        display: block;
         background-color: transparent;
         background-image: url(./assets/shared/icon-hamburger.svg);
         background-repeat: no-repeat;
